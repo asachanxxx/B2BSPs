@@ -1,0 +1,172 @@
+//Once user has been logged in then system need to get the respective profile of thires
+//not all the details want from the system but relevent details
+//This is type of LoggedUserProfile that yet to create
+LoggedUserProfile GetAssociatedProfile(UserID)
+EditUserProfile(EditUserVM)
+EditOrganization(EditOrganizationVM)
+ChangePassword(UserID , CurrentPassword , NewPassword)
+ManagerDashboardData GetManagerSpecificDashboardData(UserID)
+BuyerDashboardData GetBuyerSpecificDashboardData(USerID)
+SellerDashboardData GetSellerSpecificDashboardData(UserID)
+string GetImage(string ImageId);
+List<string> GetImageBulk(int ID)
+MegaMenuVM GetDataForMegaMenu()
+
+==========================
+Product Display And iNSERT 
+===========================
+
+List<SubCategory> GetSubcategoryForSideMenu(Category Id)
+List<SubCatVM> GetDataForSubCategoryView(Category Id)
+	SubCatVM
+	========
+	Subcategory 1 , Image Url
+	--------------
+	Subcategory 1(for Subcat1)
+	Subcategory 12(for Subcat1)
+	Subcategory 13(for Subcat1)
+
+	Subcategory 2 , Image Url
+	--------------
+	Subcategory 3(for Subcat1)
+	Subcategory 6(for Subcat1)
+	Subcategory 8(for Subcat1)
+
+	For catelog adding screen.
+
+List<Catelog> GetAllCatelogItems()
+	//To ammend the spec items to newly added categlog we need to get SpecMasterDetail. becouse we already bound those specmaster 
+ 	to Category then no need to get all the Spec details. it is enough to get master spec that bounds to given category 
+	So when catelog entering user must select a spec master . and below list is for that.
+List<SpcMaster> GetAllSpecMaster()
+
+	//User may need to see the spec details for given spec master. so this will get the spec items that bounds to given spec master
+SpecDetailVM GetSpecDetail(CategoryID)
+
+	
+Int SaveCatelog(Catelog Model, int Action)
+bool DeleteCatelog(int CatelogId)
+	THis will be userd in Categlog Search page
+
+	//this is for use in Catelog Disply page. for filling the drop downs
+List<CatelogDataFeedVM> GetCatelogDataFeed()
+	CatelogDataFeedVM
+	-----------------
+	List<Brand> Brands
+	List<Series> Seriess
+	List<Model> Models
+
+	//this is for catelog search
+List<Catelog> SearchCatelogItems(CatelogSearchVM Model)
+	CatelogSearchVM
+	---------------
+	BrandId
+	SeriesId
+	ModelId
+
+	//So when user select one from above filtered categlog then they need to view products bound to the catelog
+List<ProductsForCatelogVM> GetProductForCatelogSerachResult(int CatelogID)
+	ProductsForCatelogVM
+	--------------------
+	ProductID
+	Name
+	etc... as per UI reqirments
+
+	//So in order to select one warrentry for a given item this list need to load first
+List<WarrentyType> GetAllWarrentyTypes()
+	
+	//if a product match found on above Catelog search then supplier need to add thire price for this product.
+	This what we call adding SupplierBundle to A product
+int AddSupplierPriceForProduct(SupplierBundleVM Modell)
+	SupplierBundleVM
+	----------------
+	SupplierId
+	Price 
+	WarrentyID
+	Warrenty Peried
+
+	// in here a product need basic thumbnail image. so get it from here and upload it to server.we have found the method to do it.
+	// also need to pass product object and warrenty object. warrenty information saved in supplier warrenty table
+int AddProduct(Product Object , ThumbailIMage img, SupplierWarrenty warrenty, List<SpecItemsVM> specObj)
+
+	//this will use when entering a new product and to see if a product exists 
+bool SearchExistingProduct(productSearchVM Obj)
+	productSearchVM
+	---------------
+	BrandId
+	SeriesId
+	ModelId
+	PartID
+	
+	//This will use to duplicate the products itself 
+ProductVM DuplicateProduct( int ProductId)
+	ProductVM 
+	---------
+	Product Object
+	SupplierWarrenty warrenty
+	List<SpecItemsVM> specObj
+
+
+
+
+
+
+
+Product Managemtnt
+===================
+List<CatelogItems> CatelogProductSearch(int BrandId,int Brand)
+
+
+
+ForMega Menu
+=============
+
+
+
+Dashboard(Individual user prospective)
+======================================
+
+LoggedUserProfile  object can be used to get basic data to dashboard
+It contains basics like DisplyName , Email , Picure , Address, phone
+
+Managers
+========
+
+Buyers
+======
+
+Sellers
+=======
+
+Hold design on these things
+and start Product Things
+
+
+R&D
+===
+Extract Pictures from the picture server
+Method
+Keep a common URL for pictures in Config
+make some method to name the pictures
+create a method to Combine the image path and image to get full path
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
