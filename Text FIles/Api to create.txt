@@ -16,40 +16,41 @@ MegaMenuVM GetDataForMegaMenu()
 Product Display And iNSERT 
 ===========================
 
-List<SubCategory> GetSubcategoryForSideMenu(Category Id)
-List<SubCatVM> GetDataForSubCategoryView(Category Id)
+List<SubCategory> GetSubcategoryForSideMenu(Category Id) ok 
+List<SubCatVM> GetDataForSubCategoryView(Category Id) ok
 	SubCatVM
 	========
 	Subcategory 1 , Image Url
 	--------------
-	Subcategory 1(for Subcat1)
-	Subcategory 12(for Subcat1)
-	Subcategory 13(for Subcat1)
+	Subcategory2 1(for Subcat1)
+	Subcategory2 12(for Subcat1)
+	Subcategory3 13(for Subcat1)
 
 	Subcategory 2 , Image Url
 	--------------
-	Subcategory 3(for Subcat1)
-	Subcategory 6(for Subcat1)
-	Subcategory 8(for Subcat1)
+	Subcategory2 3(for Subcat1)
+	Subcategory2 6(for Subcat1)
+	Subcategory2 8(for Subcat1)
 
 	For catelog adding screen.
 
-List<Catelog> GetAllCatelogItems()
+List<Catelog> GetAllCatelogItems() ok
 	//To ammend the spec items to newly added categlog we need to get SpecMasterDetail. becouse we already bound those specmaster 
  	to Category then no need to get all the Spec details. it is enough to get master spec that bounds to given category 
 	So when catelog entering user must select a spec master . and below list is for that.
-List<SpcMaster> GetAllSpecMaster()
+List<SpcMaster> GetAllSpecMaster() ok
+
 
 	//User may need to see the spec details for given spec master. so this will get the spec items that bounds to given spec master
-SpecDetailVM GetSpecDetail(CategoryID)
+SpecDetailVM GetSpecDetail(CategoryID) ok
 
 	
-Int SaveCatelog(Catelog Model, int Action)
+Int SaveCatelog(Catelog Model, int Action) ok
 bool DeleteCatelog(int CatelogId)
 	THis will be userd in Categlog Search page
 
 	//this is for use in Catelog Disply page. for filling the drop downs
-List<CatelogDataFeedVM> GetCatelogDataFeed()
+List<CatelogDataFeedVM> GetCatelogDataFeed() ok
 	CatelogDataFeedVM
 	-----------------
 	List<Brand> Brands
@@ -57,7 +58,7 @@ List<CatelogDataFeedVM> GetCatelogDataFeed()
 	List<Model> Models
 
 	//this is for catelog search
-List<Catelog> SearchCatelogItems(CatelogSearchVM Model)
+List<Catelog> SearchCatelogItems(CatelogSearchVM Model) ok
 	CatelogSearchVM
 	---------------
 	BrandId

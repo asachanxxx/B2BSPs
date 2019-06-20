@@ -1,0 +1,41 @@
+Top menu
+========
+About US - Contact - Order Tracker - Blog
+
+[Order Tracker must be for login users only]
+
+My account , Currency and Language 
+
+[
+each of them can be turn on and off.
+my account is activated for logged in users only
+]
+
+when user logged in then we have to show My account with all the menues. 
+if not logged on then need to show "Log In" and "Register" Lismks
+
+need figure out what to do with the web site icon as wella as Tab icon on the browser 
+
+also most important thing is to design a Search facility to the system. theoratically this can be imagine but
+still have to define a way to do it physically
+
+need to figure out the header menu for the system. i guess it should not exceeded more then 3 menu items
+but it has to be perfect. 
+[this need to be viewd for logged in users only. and for anon users it can't be shown]
+
+
+
+Variables and Theory
+====================
+loginUserProfile - this will indicate that a user is logged on.
+CurrencyMenuSwitch - indicate currency drop down enable or disable on top menu
+LangMenuSwitch - indicate Language drop down enable or disable on top menu
+
+
+
+
+
+Tasks
+=====
+have to figure out the My Account menues right way
+Figure out how to do log in here and register. register can be redirected to separate but log in has to be just in place
