@@ -39,3 +39,9 @@ Tasks
 =====
 have to figure out the My Account menues right way
 Figure out how to do log in here and register. register can be redirected to separate but log in has to be just in place
+
+
+
+Search theorem
+==============
+they search keyword through subcategory and subcategory2.
