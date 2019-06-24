@@ -33,7 +33,7 @@ select *from [All$] where Level3 = 'Processors'
 --select SpecItemName from [dbo].[SpecItems] where SpecItemName   in
 --(select distinct extended from LevelWiseExtended)
 
---select * from LevelWiseExtended  where Level3Name = 'Processors'
+select distinct extended  from LevelWiseExtended  where Level3Name = 'Processors'
 
 
 --select distinct Level3Name from LevelWiseExtended where Level3Name not in(
@@ -54,6 +54,7 @@ select *from [All$] where Level3 = 'Processors'
 
 --select * from [Level3] where name ='Barcode Scanner'
 
+select * from extMap
 
 SELECT        L1.ID AS CatID, L1.Name AS CatName, L2.ID AS SubCatId, L2.Name AS SubCatName, L3.ID AS Sub2CatId, L3.Name AS sub2Catname2
 FROM            dbo.Level1 AS L1 INNER JOIN
@@ -61,3 +62,11 @@ FROM            dbo.Level1 AS L1 INNER JOIN
                          dbo.Level3 AS L3 ON L1.ID = L3.CatID AND L2.ID = L3.SubCatID
 
 
+
+select * from [dbo].[SpecItems]
+select *  from LevelWiseExtended
+
+
+[dbo].[Level3]
+
+select distinct Level3Name  from LevelWiseExtended
