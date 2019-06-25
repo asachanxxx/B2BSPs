@@ -1,0 +1,28 @@
+https://www.neweggbusiness.com/product/productlist.aspx?Submit=ENE&DEPA=0&Order=BESTMATCH&N=-1&isNodeId=1&Description=PC
+https://www.neweggbusiness.com/product/productlist.aspx?submit=ene&depa=0&order=bestmatch&n=-1&isnodeid=1&description=pc&page=2
+
+Browse Category
+===============
+https://www.neweggbusiness.com/t/computer-hardware/id-21
+
+Browse buy subcategory
+=====================
+https://www.neweggbusiness.com/c/cpus-processors/id-34
+
+browse by subcategory
+=====================
+https://www.neweggbusiness.com/s/intel-motherboards/id-280
+
+
+Search using word Processor
+===========================
+https://www.neweggbusiness.com/product/productlist.aspx?Submit=ENE&DEPA=0&Order=BESTMATCH&N=-1&isNodeId=1&Description=proccesor
+
+Search using 3 processor socket types
+=====================================
+https://www.neweggbusiness.com/product/productlist.aspx?n=100008791%20600567584%20601304476%20600438202
+
+
+601322010   600003290
+
+
