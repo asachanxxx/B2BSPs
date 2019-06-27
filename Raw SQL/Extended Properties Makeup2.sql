@@ -26,3 +26,15 @@ select * from [dbo].[Level2$] where name is null
 select * from [dbo].[Level3$] where name is null
 --delete from [dbo].[Level3$] where name is null
 
+
+select * from [dbo].[Level3$] where id between 321 and 642
+
+select name from [dbo].[Level3$] where name in
+(select name from XxX_CategoryList )
+
+select name from XxX_CategoryList where name not in
+(select name from [dbo].[Level3$])
+
+
+select * from [dbo].[Level3$] where name like '%moth%'
+select * from XxX_All where Level3 like '%Proces%'
