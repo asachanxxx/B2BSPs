@@ -1,11 +1,11 @@
 select * from [dbo].[XxX_All]
 select * from [dbo].[XxX_ExtractedLevel3s]
 select * from [dbo].[XxX_ExtractedSpecItems]
-select * from [dbo].[SpecItems]
 select * from [dbo].[Level1]
 select * from [dbo].[Level2]
 select * from [dbo].[Level3] where Name = 'Home Theater Projectors'
 select * from [dbo].[SpecMasters]
+select * from [dbo].[SpecItems]
 select * from [dbo].[SpecDetails]
 select * from SpecMasterDetailValue
 --select 1 as Level3Id , '' as Level3Name , 1 as SpecItem , '' as SpecItemName , '' as SpecValue into XxX_SpecDetails 
@@ -92,11 +92,3 @@ select * from [dbo].[XxX_All]
 
 
 
-select * from SpecItems 
-where SpecItemName  in (
-
-
-
-)
-
-insert into SpecItems values ( 'String')
