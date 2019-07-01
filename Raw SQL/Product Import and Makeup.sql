@@ -103,11 +103,9 @@ select * from [dbo].[SpecProductDetails]
 select * from [dbo].[Products]
 select * from [dbo].[SpecProductDetails]
 select * from [dbo].[GetProductSpecDetails]
-select * from 
+select * from [dbo].[XxX_All]
 
-
-select * from [dbo].[XxX_ProductDetails]
-
+select * from Level1
 
 
 
