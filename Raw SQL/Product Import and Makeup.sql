@@ -37,6 +37,7 @@ select * from [XxX_ProductList] where Series is null
 select * from Models
 select * from [dbo].[Series]
 select * from [dbo].[Products]
+select * from Brands
 
 
 
@@ -47,17 +48,17 @@ select * from [dbo].[Products]
 --           ,[IsApproved],[ConversionRate],[CurrencyId],[NoOfClicks],[NoOfImpressions]
 --           ,[AddedByASeller],[AddedSellerID],[IpAddress],[CreatedBy],[ModifiedBy],[CreatedWhen],[ModifiedWhen])
   
---select 
---Code , b.Id,M.Id,PL.Name,DisplayName,PartNo,Series,
---PL.Name,Code,'',LVL1,LVL2,LVL3,0,
---50,PriceLKR,PriceLKR,Path,
---1,0,1,0,0,
---0,0,'','System','System',GETDATE(),GETDATE()
+--	select 
+--	Code , b.Id,M.Id,PL.Name,DisplayName,PartNo,Series,
+--	PL.Name,Code,'',LVL1,LVL2,LVL3,0,
+--	50,PriceLKR,PriceLKR,Path,
+--	1,0,1,0,0,
+--	0,0,'','System','System',GETDATE(),GETDATE()
 
---from [dbo].[XxX_ProductList] as PL inner join 
---Brands as B on PL.Brand = b.Name inner join
---Series as S on PL.Series = s.Name inner join
---Models as M on PL.Model = M.Name
+--	from [dbo].[XxX_ProductList] as PL inner join 
+--	Brands as B on PL.Brand = b.Name inner join
+--	Series as S on PL.Series = s.Name inner join
+--	Models as M on PL.Model = M.Name
 
 
 select * from [dbo].[Products]
@@ -67,11 +68,17 @@ select * from [dbo].[SpecProductDetails]
 
 /*add items to specitems that are not in upload list*/
 
+
 --INSERT INTO [dbo].[SpecItems]
 --           ([SpecItemName]
 --           ,[SpecItemDisplayName]
---           ,[DataType])
---select distinct attribute , attribute , 'String' from [dbo].[XxX_ProductDetails] where attribute is not null 
+--           ,[DataType],[IsApproved]
+--           ,[IpAddress]
+--           ,[CreatedBy]
+--           ,[ModifiedBy]
+--           ,[CreatedWhen]
+--           ,[ModifiedWhen])
+--select distinct attribute , attribute , 'String' ,1,'','System' , 'System' , getdate(), getdate()  from [dbo].[XxX_ProductDetails] where attribute is not null 
 --and attribute  not in (select SpecItemName from [dbo].[SpecItems])
 
 
