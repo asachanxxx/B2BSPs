@@ -1,0 +1,9 @@
+Images and specs
+================
+1. Need images for Partner list and List of partners for display
+2. Main page has 2 Advertisments . (FolderName:img-2 Image: banner-1.jpg , banner-1-mobile.jpg )
+3. when browsing sub categories they contain above Scroll images for advertisments 
+   (FolderName:img-3 Image: If has 4 images then names : slide-1-full.jpg, slide-2-full.jpg,slide-3-full.jpg,slide-4-full.jpg )
+	Also need modile size of those (slide-1-mobile)
+4. In the megamenu we can add images to make it very beautiful. so need 4 of those images
+     (FolderName:img-4 Image: megamenu-1.jpg )

@@ -98,4 +98,66 @@ EX: Keyword | Match		| ProductIDStrings | No Of OCcurances
 	 * ProductIDStrings		- Product Id's of all those occurances 
 */
 
-backup database B2BSystem to disk = 'I:\TFS\B2BSystem\File\SPs\B2BSPs\DB\B2BSystem.bak'
+backup database B2BSystem to disk = 'I:\TFS\B2BSystem\File\SPs\B2BSPs\DB\B2BSystem.bak'.
+
+select distinct Extended from XxX_All where Extended like '%Memory%'
+
+
+
+select * from Level1
+select * from Level2
+select * from Level3
+
+select SG.Id as 'GroupID' , sg.Name as 'GroupName', SpecItemName,SpecItemDisplayName,Value from [SpecProductDetails] as SPD  
+inner join SpecGroups as SG on sg.Id = spd.SpecGroupid
+where ProductId = 16
+
+select SpecItemName,Id as 'SpecId','Value' as SpecValue from [dbo].[SpecProductDetails] where ProductId = 16
+
+
+select * from ProductReviews
+select * from ProductRatings
+select * from [dbo].[Users]
+
+
+select distinct Level3Id , Level3.Level3Name from SpecLevelDetails as S
+inner join Level3 on Level3.Id = s.Level3Id
+
+SELECT * FROM Level2
+SELECT * FROM Level3
+
+SELECT  id AS 'Level1Id' ,level1name AS 'Level1Name' FROM Level1 ORDER BY ID
+
+SELECT * FROM Level2
+
+SELECT L2.LEVEL1ID AS 'Level1Id',L2.ID AS 'Level2Id',L2.LEVEL2NAME AS 'Level2Name',L2.Url,L2.[External],L2.Target, L2.ColumnNumber  , L3.ID AS 'Level3Id',L3.LEVEL3NAME AS 'Level3Name',L3.Url,L3.[External],L3.Target FROM Level2 AS L2
+INNER JOIN Level3 AS L3 ON L2.ID = L3.LEVEL12D WHERE L2.LEVEL1ID= 1
+
+
+
+SELECT level1id , count (level1id) FROM Level3
+group by level1id  --xl'|'lg'|'nl'|'sm';
+--update Level1 set image = code
+------ target?: '_self'|'_blank';
+--update Level1 set URL ='./process/categoryview'
+
+SELECT CONVERT(varchar(10),level1id),* FROM Level2
+SELECT * FROM Level2 where id in (1,2,3,4) 
+
+SELECT * FROM Level2
+--update Level2 set columnNumber = CONVERT(varchar(10),level1id) + '-3' where id in (9,10,11,12) 
+
+--backup database b2bsystem to disk = 'I:\DBBackups\B2BSystem\b2bsystem_2019_08_12.bak'
+
+update Level2 set columnnumber ='' where id >12
+
+Id	Level1Id	Level12d	Code	Level3Name	NoOfClicks	NoOfImpressions	SpecMasterId	IpAddress	CreatedBy	ModifiedBy	CreatedWhen	ModifiedWhen	Url	External	Target
+602	1	1	LVL3-602	Desktop Processors	0	0	0		System	System	2019-07-09 12:10:08.817	2019-07-09 12:10:08.817	./shop	0	_self
+
+SELECT * FROM Level1
+SELECT * FROM Level2
+SELECT * FROM Level3
+
+
+SELECT L2.Id as 'L2ID' , l2.Level2Name as 'label1',l2.Url as 'url1', l3.ID as 'Id' , l3.level3Name as 'label' , L3.Url as 'url'     FROM Level2 as L2 inner join 
+Level3 as L3 on L2.ID = L3.Level12d
