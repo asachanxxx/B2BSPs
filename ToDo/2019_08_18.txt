@@ -1,0 +1,20 @@
+0. Supplier Price portal for Given Product(Document the process) Lowest price comes first
+1. Buyer rating Based on (Criteria need to be given)
+2. Images need to be finalized
+3. Order Tracker need to complete (from the point Request Qutation  to Finalize the Order)
+4. Pland FAQ section and About US
+5. Product Search
+6. Main page slider Details Variablization ( As Header , Details and Button Click Event)
+7. Main page Logo
+8. Buy domain and parking
+9. Qutation Request
+10 Shopping Charges (to be given) 
+11. Messaging
+12. Compaire Products
+13. File Compains
+14. When user logged in check if user approved and activated
+	- if not approved Show message not approved
+	- if not activated show message that user lokecd out
+
+Upload :- Mobitel
+
